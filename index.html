@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Celsius to Fahrenheit</title>
+</head>
+<body id="get">
+    <div id="wrapper">
+        <h2>Square root convertor</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="value to convert into squareroot">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">squareroot value</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+      function convert(){
+        const number =Number(document.getElementById("input").value)
+        const sqr=Math.sqrt(number)
+        const result = document.getElementById("result")
+        result.innerHTML=sqr.toFixed(4)
+        
+      }
+    </script>
+</body>
+</html>
